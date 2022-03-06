@@ -1,0 +1,10 @@
+{
+  "name": "structure",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "author": "ys",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
