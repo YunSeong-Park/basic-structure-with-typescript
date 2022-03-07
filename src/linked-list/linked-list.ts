@@ -1,3 +1,5 @@
+import Node from "../node/node";
+
 export class LinkedList<T> {
   private _firstNode: Node<T> | null;
   private _length: number;
@@ -81,26 +83,5 @@ export class LinkedList<T> {
 
   get length() {
     return this._length;
-  }
-}
-
-class Node<T> {
-  private _item: T;
-  private _next: Node<T> | null;
-  constructor(item: T) {
-    this._item = item;
-    this._next = null;
-  }
-
-  get next() {
-    return this._next;
-  }
-
-  get item() {
-    return this._item;
-  }
-
-  set next(item: Node<T> | null) {
-    this._next = item;
   }
 }
