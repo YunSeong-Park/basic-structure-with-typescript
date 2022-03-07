@@ -100,5 +100,9 @@ describe("LinkedList", () => {
         expect(list.getItem(i)).toBe(i < value ? i : i + 1);
       }
     });
+
+    test("throw error when out of range", () => {
+      expect(() => list.remove(length)).toThrow("out of range");
+    });
   });
 });
